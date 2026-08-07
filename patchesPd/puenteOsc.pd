@@ -1,0 +1,10 @@
+#N canvas 121 405 861 625 12;
+#X obj 49 148 netsend -u -b;
+#X msg 202 78 connect localhost 12000;
+#X obj 49 35 inlet;
+#X obj 202 35 loadbang;
+#X obj 49 78 oscformat pd \$1;
+#X connect 1 0 0 0;
+#X connect 2 0 4 0;
+#X connect 3 0 1 0;
+#X connect 4 0 0 0;
